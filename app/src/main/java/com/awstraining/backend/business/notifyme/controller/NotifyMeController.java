@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 //  2. Familiarize yourself with api, open-api contract, how it is generated?
 public class NotifyMeController implements NotifyMeApi {
 
-
+    private final NotifyMeService service;
     
     // TODO: lab1
     //  1. Inject service with business logic.
