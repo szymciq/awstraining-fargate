@@ -14,6 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
 // TODO: lab1
 //  1. Create RestController "notification/v1".
 //  2. Familiarize yourself with api, open-api contract, how it is generated?
+@RestController
+@RequestMapping("notification/v1")
 public class NotifyMeController implements NotifyMeApi {
 
     private final NotifyMeService service;
