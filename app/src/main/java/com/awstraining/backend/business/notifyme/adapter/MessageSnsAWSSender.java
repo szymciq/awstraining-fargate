@@ -21,6 +21,9 @@ public class MessageSnsAWSSender implements MessageSender {
 
     // TODO: lab1
     //  1. Inject AWS AmazonsSNS from configuration SNSConfig.
+    private String snsTopic;
+
+    private AmazonSNS sns;
     //  2. Make sure that you created new value in parameter store with arn of sns topic.
     //  3. Inject parameter with @Value annotation through constructor.
     @Autowired
